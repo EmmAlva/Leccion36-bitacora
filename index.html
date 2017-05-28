@@ -13,35 +13,54 @@
 		<h3>"Publish anything", just in you browser.</h3>
 	</header>	
 	<section class="fixed-action-btn">
-		<div>
-			<a href=""></a>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
+		<div class="dropdown">
+			<button type="button" class="btn btn-danger bmd-btn-fab dropdown-toggle" id="dropMenuCircle" data-toggle ="dropdown" aria-haspopup ="true" aria-expanded = "true">
+				<i class="glyphicon glyphicon-pencil"></i>
+			</button>			
+			<ul class="dropdown-menu" aria-labelledby="dropMenuCircle">
+				<li><a href="#myModal" data-toggle = "modal" class="btn-fab color0"><i class="glyphicon glyphicon-comment"></i></a></li>
+				<li><a href="#" class="btn-fab color1"><i class="glyphicon glyphicon-picture"></i></a></li>
+				<li><a href="#" class="btn-fab color2"><i class="glyphicon glyphicon-calendar"></i></a></li>
+				<li><a href="#" class="btn-fab color3"><i class="glyphicon glyphicon-expand"></i></a></li>
 			</ul>
 		</div>
 	</section>
-	<section id="api-file">
-		<div id="modal-text">
-			<div class="columasssymas">
-				<label for="">Título</label>
-				<input id="title-modal-text" type="text" class="" data-kkjf placeholder="Título">
+	<!-- MODAL-ESTRUCTURA -->
+	<section id="modal-feature">
+		<div class="container">
+			<!-- <button type="button" class="btn btn-info" data-toggle ="modal" data-target="#myModal">icono textAPI</button> -->
+			<!-- modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="modal-body">
+							<form role="form" action="">
+								<div class="form-group input-field col">
+									<input id="input-title" type="text" class="form-style validate" maxlength="10">
+									<label id="title-lab" for="title" class="">Título</label>
+									<span class="character-counter"></span>
+								</div>
+								<div class="form-group input-field">
+									<textarea name="mensajen" id="input-texta" cols="30" rows="5" class="form-style validate boot-textarea"></textarea>
+									<label id="texta-lab" for="message">Mensaje</label>
+									
+								</div>
+								<button type="submit" class="btn btn-info btn-style">Publicar<span class="glyphicon glyphicon-send"></span></button>
+							</form>							
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="columasssymas">
-				<label for="">Mensaje</label>
-				<textarea id="message-modal-text" class="" placeholder="Mensaje"></textarea> 
-			</div>
-			<button class=""></button>
-			
-		</div>		
+		</div>
 	</section>
 
-
+	<section id="api-file">
 	
-	<script type="javascript" src="assets/js/bootstrap.min.js" ></script>
-	<script type="javascript" src="assets/js/app.js" ></script>
+	</section>
+
+	<script type="text/javascript" src="assets/js/jquery.js" ></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>	
+	<script type="text/javascript" src="assets/js/app.js" ></script>
 </body>
 </html>
