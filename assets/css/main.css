@@ -1,8 +1,23 @@
 /*BUTTONS*/
+.fixed-action-btn{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
 .bmd-btn-fab{
 	border-radius: 50%;
 	width: 56px;
 	height: 56px;
+}
+.dropdown-menu{
+	position: relative !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding:0 5px;
+	margin: 20px 0;
+}
+.dropdown-menu a{
+	margin: 0 8px;
 }
 
 .btn-fab{
